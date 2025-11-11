@@ -1,27 +1,26 @@
-# Use a base image with Nginx and PHP-FPM
-FROM richarvey/nginx-php-fpm:latest
+# 🚨 Base Image ကို ပြောင်းလိုက်ပါပြီ
+FROM phpswoole/swoole:4.8-php8.2-alpine
 
 # Set the working directory
-WORKDIR /var/www/html
-
-# Copy the custom Nginx config file to the correct location
-# This overwrites the default config to point to the 'public' folder.
-COPY nginx-site.conf /etc/nginx/sites-available/default.conf
+WORKDIR /app
 
 # Copy the entire application code into the container
-COPY . /var/www/html
+COPY . /app
 
-# Install Composer dependencies
+# Install PHP dependencies
 RUN composer install --no-dev --optimize-autoloader
 
-# Configuration and Migration (Keep these steps for database/cache)
+# Nginx config ကို ဒီ Image မှာ ထည့်စရာမလိုတော့ပါဘူး။
+# Swoole က built-in web server ကို သုံးပါမယ်။
+
+# Configuration and Migration
 RUN php artisan config:cache
 RUN php artisan route:cache
 RUN php artisan migrate --force || true
 
-# Set permissions for the storage folder
-RUN chown -R www-data:www-data storage bootstrap/cache \
-    && chmod -R 775 storage bootstrap/cache
+# Set storage permissions
+RUN chmod -R 777 storage bootstrap/cache
 
-# Expose the port (The container runs on port 80)
-EXPOSE 80
+# 🚨 Container စတင်ဖို့ Command ကို ပြောင်းပါ
+# Laravel Application ကို public folder မှ စတင် run ရန်။
+CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=80"]
