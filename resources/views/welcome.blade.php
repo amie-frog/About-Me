@@ -100,7 +100,7 @@
         <div class="max-w-6xl mx-auto px-6">
             <h3 class="text-4xl font-bold text-center mb-12 text-blue-600 dark:text-blue-400">My Work (Laravel Focus)</h3>
 
-            {{-- @php
+            @php
                 // 🚨 NOTE: Controller/Route မှ View သို့ Project Data ကို pass လုပ်ရပါမည်။
                 // ယာယီနမူနာ Data
                 $projects = [
@@ -108,7 +108,7 @@
                     ['title' => 'E-Commerce Backoffice', 'description' => 'Built an admin panel for inventory, orders, and user management using Laravel Livewire.', 'link' => '#', 'icon_src' => 'https://assets7.lottiefiles.com/packages/lf20_xy2e6n88.json'],
                     ['title' => 'Personal Blog Platform', 'description' => 'A small CRUD application to practice Unit Testing and advanced Eloquent features.', 'link' => '#', 'icon_src' => 'https://assets1.lottiefiles.com/packages/lf20_u4kntzfx.json'],
                 ];
-            @endphp --}}
+            @endphp
 
             <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10">
                 @foreach ($projects as $project)
