@@ -52,7 +52,7 @@
 
         <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center" data-aos="fade-left">
             <lottie-player
-                src="https://assets4.lottiefiles.com/packages/lf20_tq2wxg0s.json"
+                src="https://lottie.host/78363768-466c-4876-9c42-5d8f636b04e6/7Bw2dJ9b0z.json"
                 background="transparent"
                 speed="1"
                 style="width: 400px; height: 400px;"
@@ -65,8 +65,13 @@
     <section id="about" class="max-w-5xl mx-auto py-20 px-6 text-center" data-aos="fade-up">
         <h3 class="text-4xl font-bold mb-6 text-blue-600 dark:text-blue-400">About Me</h3>
         <p class="text-xl text-gray-600 dark:text-gray-400 leading-relaxed max-w-3xl mx-auto">
-            I'm a dedicated developer from Myanmar 🇲🇲, age 25. I specialize in backend development with **Laravel** and modernizing legacy applications.
-            My core focus is on maintaining and enhancing high-stakes systems for the **Seure Link Co.**'s FDA project, ensuring stability and performance.
+I specialize in PHP and Laravel, building reliable, user-friendly web applications. I enjoy turning ideas into clean, functional code and continuously learning new technologies to improve my craft.
+
+I graduated with a Bachelor’s Degree in Computer Science from Computer University, and my thesis project — a Flight Reservation System — helped me gain strong experience in backend development and database management.
+
+Currently, I’m working on FDA-related projects, where I focus on maintaining and enhancing web systems to ensure high performance and data integrity. My goal is to grow as a full-stack developer and contribute to projects that make a real impact.
+
+When I’m not coding, I love exploring new tech tools, learning Japanese, and improving my design sense.
         </p>
     </section>
 
