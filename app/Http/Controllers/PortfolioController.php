@@ -19,7 +19,7 @@ class PortfolioController extends Controller
             [
                 'title' => 'FDA Drug Submission Portal',
                 'description' => 'A web app for submitting and reviewing pharmaceutical documents securely.',
-                'link' => '#',
+                'link' => 'https://drug-esubmission.fda.gov.mm/',
             ],
             [
                 'title' => 'Library Management System',
