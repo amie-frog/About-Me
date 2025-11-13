@@ -52,10 +52,10 @@
 
         <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center" data-aos="fade-left">
             <lottie-player
-                src="https://assets10.lottiefiles.com/packages/lf20_kkflmtur.json"
+                src="https://assets4.lottiefiles.com/packages/lf20_tq2wxg0s.json"
                 background="transparent"
                 speed="1"
-                style="width: 350px; height: 350px;"
+                style="width: 400px; height: 400px;"
                 loop
                 autoplay>
             </lottie-player>
@@ -78,7 +78,7 @@
                     ['name' => 'Laravel', 'icon' => '🐘', 'desc' => 'Primary backend framework.'],
                     ['name' => 'PHP', 'icon' => '⚙️', 'desc' => 'Strong core PHP knowledge.'],
                     ['name' => 'MySQL', 'icon' => '🗄️', 'desc' => 'Database design & query optimization.'],
-                    ['name' => 'Docker', 'icon' => '🐳', 'desc' => 'Deployment & containerization.'],
+                    ['name' => 'Vue.js', 'icon' => '🟢', 'desc' => 'Interactive frontend development.'],
                     ['name' => 'TailwindCSS', 'icon' => '🎨', 'desc' => 'Rapid UI development.'],
                     ['name' => 'JavaScript', 'icon' => '✨', 'desc' => 'Front-end interactivity.'],
                     ['name' => 'Git/GitHub', 'icon' => '🌳', 'desc' => 'Version control mastery.'],
@@ -100,7 +100,7 @@
         <div class="max-w-6xl mx-auto px-6">
             <h3 class="text-4xl font-bold text-center mb-12 text-blue-600 dark:text-blue-400">My Work (Laravel Focus)</h3>
 
-            @php
+            {{-- @php
                 // 🚨 NOTE: Controller/Route မှ View သို့ Project Data ကို pass လုပ်ရပါမည်။
                 // ယာယီနမူနာ Data
                 $projects = [
@@ -108,7 +108,7 @@
                     ['title' => 'E-Commerce Backoffice', 'description' => 'Built an admin panel for inventory, orders, and user management using Laravel Livewire.', 'link' => '#', 'icon_src' => 'https://assets7.lottiefiles.com/packages/lf20_xy2e6n88.json'],
                     ['title' => 'Personal Blog Platform', 'description' => 'A small CRUD application to practice Unit Testing and advanced Eloquent features.', 'link' => '#', 'icon_src' => 'https://assets1.lottiefiles.com/packages/lf20_u4kntzfx.json'],
                 ];
-            @endphp
+            @endphp --}}
 
             <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10">
                 @foreach ($projects as $project)
